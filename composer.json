@@ -1,0 +1,55 @@
+{
+    "name": "tyhpdef/symfony-dependency-injection-impl",
+    "description": "Implementation package for tyhpdef/symfony-dependency-injection. Require tyhpdef/symfony-dependency-injection, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "7.4.17.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": ">=8.2",
+            "require": {
+                "tyhpdef/php": "@dev",
+                "tyhpdef/symfony-service-contracts": "@dev",
+                "tyhpdef/psr-container": "@dev",
+                "tyhpdef/symfony-var-exporter": "@dev",
+                "tyhpdef/symfony-config": "@dev",
+                "tyhpdef/symfony-expression-language": "@dev",
+                "tyhpdef/php-ext-dom": "@dev",
+                "tyhpdef/psr-cache": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/symfony-dependency-injection"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "symfony/dependency-injection": "7.4.17"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev",
+        "tyhpdef/symfony-service-contracts": "@dev",
+        "tyhpdef/psr-container": "@dev",
+        "tyhpdef/symfony-var-exporter": "@dev",
+        "tyhpdef/symfony-config": "@dev",
+        "tyhpdef/symfony-expression-language": "@dev",
+        "tyhpdef/php-ext-dom": "@dev",
+        "tyhpdef/psr-cache": "@dev"
+    }
+}
